@@ -16,7 +16,7 @@ var answerList = []; //initialize answerList to be empty
 //adds user-submitted answer to answerList
 function submitAnswer() {
   var answer = document.getElementById("answerInput").value;
-  var lowercaseAnswer = answer.toLowerCase(); // changes all letters in answerInput to be lowercase
+  var lowercaseAnswer = answer.toLowerCase(); // changes all letters in answerInput to be lowercase letters
   console.log(lowercaseAnswer);
   answerList.push(lowercaseAnswer);
   console.log(answerList);
@@ -26,7 +26,7 @@ function submitAnswer() {
 //checks if user-submitted guess is in answerList
 function checkGuess() {
   var guess = document.getElementById("guessInput").value;
-  var lowercaseGuess = guess.toLowerCase(); // changes all letters in guessInput to be lowercase
+  var lowercaseGuess = guess.toLowerCase(); // changes all letters in guessInput to be lowercase letters
   console.log(lowercaseGuess);
   for(i=0;i<answerList.length;i++){
       if (lowercaseGuess == answerList[i]){
