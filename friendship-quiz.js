@@ -36,4 +36,3 @@ function checkGuess() {
   }
   alert("Try again!");
 }
-
